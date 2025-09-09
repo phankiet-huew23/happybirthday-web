@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Màn chọn ảnh + nhập tên -->
+  <div id="screen">
+    <h2>Chọn 3 ảnh xinh nhất của bạn và nhập tên 💌</h2>
+
+    <input type="file" id="imageInput" accept="image/*" multiple>
+    <div id="preview"></div>
+
+    <input type="text" id="passwordInput" placeholder="Tên của người nhận">
+    <br>
+    <button id="openGiftBtn">Mở quà 🎁</button>
+  </div>
+
+  <!-- Màn 3: Bất ngờ -->
+  <div id="screen3" style="display: none;">
+    <h2>Bất ngờ 🎉</h2>
+    <div id="chosenImages"></div>
+    <p id="message"></p>
+
+    <!-- Thanh nhạc -->
+    <audio id="musicPlayer" controls>
+      <source src="assets/audio/2.mp3" type="audio/mpeg">
+      Trình duyệt của bạn không hỗ trợ audio.
+    </audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
